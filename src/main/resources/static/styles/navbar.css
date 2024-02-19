@@ -4,6 +4,7 @@
   justify-content: space-between;
   align-items: center;
   z-index: 1;
+  background-color: #fff;
 }
 
 #super_nav .logo a {
