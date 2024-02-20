@@ -1,0 +1,137 @@
+.container {
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+  padding: 100px;
+  padding-top: 50px;
+}
+
+section>h1 {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  border: solid 2px #111339;
+  width: 50%;
+  margin: auto;
+  margin-top: 60px;
+  background-color: #0a0a29;
+  border-radius: 20px;
+}
+
+h2 {
+  color: #0a0a29;
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: underline;
+}
+
+table {
+  margin: auto;
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 80%;
+  border: solid 1px black;
+  text-align: center;
+  table-layout: fixed;
+}
+
+.table-title {
+  background-color: #ccc;
+  color: #0a0a29;
+  text-align: center;
+  margin-top: 20px;
+  text-transform: uppercase;
+  height: 50px;
+}
+
+#col1 {
+  width: 15%;
+}
+
+#col2 {
+  width: 30%;
+}
+
+#col3 {
+  width: 55%;
+}
+
+tr {
+  border: solid 1px black;
+}
+
+th {
+  border: solid 1px white;
+  background-color: #0a0a29;
+  color: white;
+  text-align: center;
+  height: 50px;
+}
+
+td {
+  border: solid 1px black;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.uh-table {
+  margin-bottom: 50px;
+}
+
+.arch {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.card-container:nth-last-of-type(1) {
+  justify-content: center;
+}
+
+.card {
+  padding: 15px;
+  max-width: 50%;
+  border: solid 1px #0a0a29;
+  border-radius: 15px;
+}
+
+.card-container:nth-last-of-type(1) .card {
+  max-width: 75%;
+}
+
+.card p {
+  text-align: center;
+  margin-top: 10px;
+  text-transform: uppercase;
+  color: #0a0a29;
+  background-color: #ccc;
+  border-radius: 10px;
+  width: 40%;
+  margin: auto;
+}
+
+#conceptual {
+  width: 100%;
+  margin-bottom: 10%;
+  margin-top: 20%;
+}
+
+#contenedores {
+  width: 100%;
+}
+
+#componentes {
+  width: 100%;
+}
