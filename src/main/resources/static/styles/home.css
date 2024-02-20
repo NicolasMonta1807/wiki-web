@@ -54,3 +54,37 @@
   background: #ddd;
   color: #000;
 }
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card img {
+    width: 10%;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+}
+
+.card img {
+  width: 10%;
+}

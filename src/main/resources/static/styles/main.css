@@ -10,7 +10,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serif;
-  background-color: #111339;
+  background: linear-gradient(to right bottom, #000, #252877);
 }
 
 .icons i {
