@@ -1,25 +1,25 @@
-nav {
+#super_nav {
   padding: 5px 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   z-index: 1;
+  background-color: #fff;
 }
 
-nav .logo {
+#super_nav .logo a {
   display: flex;
   align-items: center;
+  text-decoration: none;
 }
 
-nav .logo img {
+#super_nav .logo img {
   height: 25px;
   width: auto;
   margin-right: 10px;
 }
 
-nav .logo h1 {
+#super_nav .logo h1 {
   font-size: 1.1rem;
   background: linear-gradient(to right, #b927fc 0%, #2c64fc 100%);
   -webkit-background-clip: text;
@@ -27,16 +27,16 @@ nav .logo h1 {
   -webkit-text-fill-color: transparent;
 }
 
-nav ul {
+#super_nav ul {
   list-style: none;
   display: flex;
 }
 
-nav ul li {
+#super_nav ul li {
   margin-left: 1.5rem;
 }
 
-nav ul li a {
+#super_nav ul li a {
   text-decoration: none;
   color: #000;
   font-size: 95%;

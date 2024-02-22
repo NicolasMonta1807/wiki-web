@@ -1,8 +1,10 @@
 <div th:fragment="navbar">
-  <nav>
+  <nav id="super_nav">
     <div class="logo">
-      <img th:src="@{/assets/logo.png}" alt="logo" />
-      <h1>WebMates</h1>
+      <a href="/">
+        <img th:src="@{/assets/logo.png}" alt="logo" />
+        <h1>WebMates</h1>
+      </a>
     </div>
     <ul>
       <li>
