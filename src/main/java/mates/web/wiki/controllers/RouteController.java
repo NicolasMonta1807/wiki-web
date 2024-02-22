@@ -10,8 +10,10 @@ import jakarta.validation.Valid;
 import mates.web.wiki.model.Contact;
 import mates.web.wiki.repositories.ContactRepository;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
+@RequestMapping("/grupo-1-1")
 public class RouteController {
 
   @Autowired
