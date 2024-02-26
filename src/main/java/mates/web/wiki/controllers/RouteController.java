@@ -19,7 +19,7 @@ public class RouteController {
   @Autowired
   private ContactRepository contactRepository;
 
-  @GetMapping("/")
+  @GetMapping("")
   public ModelAndView getHomePage() {
     return new ModelAndView("pages/home");
   }
