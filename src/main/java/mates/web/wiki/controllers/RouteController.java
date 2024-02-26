@@ -21,31 +21,31 @@ public class RouteController {
 
   @GetMapping("")
   public ModelAndView getHomePage() {
-    return new ModelAndView("pages/home");
+    return new ModelAndView("home");
   }
 
   @GetMapping("/contact")
   public ModelAndView getContactPage() {
-    ModelAndView modelAndView = new ModelAndView("pages/contact");
+    ModelAndView modelAndView = new ModelAndView("contact");
     modelAndView.addObject("contact", new Contact());
     return modelAndView;
   }
 
   @GetMapping("/project")
   public ModelAndView getProjectPage() {
-    return new ModelAndView("pages/project");
+    return new ModelAndView("project");
   }
 
   @PostMapping("/form/contact")
   public ModelAndView postContactForm(@Valid Contact contact, BindingResult bindingResult, ModelAndView modelAndView) {
     if (bindingResult.hasErrors()) {
-      modelAndView.setViewName("pages/contact");
+      modelAndView.setViewName("contact");
       modelAndView.addObject("contact", contact);
       return modelAndView;
     }
 
     contactRepository.save(contact);
-    return new ModelAndView("pages/home");
+    return new ModelAndView("home");
   }
 
 }
