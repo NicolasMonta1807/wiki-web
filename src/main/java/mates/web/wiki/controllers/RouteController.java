@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/grupo-1-1")
+@RequestMapping("")
 public class RouteController {
 
   @Autowired
