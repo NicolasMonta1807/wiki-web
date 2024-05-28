@@ -1,46 +1,70 @@
 <html layout:decorate="~{layout}">
 
 <head>
-  <title>Inicio</title>
-  <link rel="stylesheet" th:href="@{~/grupo-1-1-wiki/styles/home.css}">
+    <title>Inicio</title>
+    <link rel="stylesheet" th:href="@{~/grupo-1-1-wiki/styles/home.css}">
 </head>
 
 <body>
-  <section layout:fragment="content">
+<section layout:fragment="content">
     <section class="main_content">
-      <div class="hero">
-        <div class="info">
-          <h2> WebMates <br> <span>La web a tu alcance</span> </h2>
-          <p>Convierte tus ideas en proyectos reales de la mano de los mejores compañeros de desarrollo</p>
-          <a href="#team" class="info-btn">Conócenos!</a>
+        <div class="hero">
+            <div class="info">
+                <h2> WebMates <br> <span>La web a tu alcance</span></h2>
+                <p>Convierte tus ideas en proyectos reales de la mano de los mejores compañeros de desarrollo</p>
+                <a id="conocenos-btn" href="#team" class="info-btn">Conócenos!</a>
+            </div>
         </div>
-      </div>
-    </section>
-    <section id="team" class="team">
-      <h2 class="subtitle">¿Quiénes somos?</h2>
-      <div class="card-container">
-        <div class="card">
-          <h3>Nicolás Montañez</h3>
-          <p class="role">Arquitecto y Desarrollador</p>
-          <p class="description">
-            Ingeniero de Sistemas con experiencia en desarrollo de software, arquitectura de sistemas y
-            diseñador de soluciones.
-          </p>
-          <img th:src="@{/grupo-1-1-wiki/assets/team_n.jpg}" alt="Miembro - Nicolás Montañez">
-        </div>
-        <div class="card">
-          <h3>Juan Esteban Muñoz</h3>
-          <p class="role">Lider Técnico y Jefe de seguridad</p>
-          <p class="description">
-            Ingeniero de sistemas con experiencia en desarrollo, manejo de infraestructura
-            y seguridad informática.
-          </p>
-          <img th:src="@{/grupo-1-1-wiki/assets/team_j.jpg}" alt="Miembro - Juan Muñoz">
-        </div>
-      </div>
     </section>
 
-  </section>
+    <section id="team" class="team">
+        <h2 class="subtitle">¿Quiénes somos?</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>Nicolás Montañez</h3>
+                <p class="role">Arquitecto y Desarrollador</p>
+                <p class="description">
+                    Ingeniero de Sistemas con experiencia en desarrollo de software, arquitectura de sistemas y
+                    diseñador de soluciones.
+                </p>
+                <a href="https://github.com/nicolasmonta1807" target="_blank">
+                    <img th:src="@{/grupo-1-1-wiki/assets/team_n.jpg}" alt="Miembro - Nicolás Montañez">
+                </a>
+            </div>
+            <div class="card">
+                <h3>Juan Esteban Muñoz</h3>
+                <p class="role">Lider Técnico y Jefe de seguridad</p>
+                <p class="description">
+                    Ingeniero de sistemas con experiencia en desarrollo, manejo de infraestructura
+                    y seguridad informática.
+                </p>
+                <a href="https://github.com/juanmudi" target="_blank">
+                    <img th:src="@{/grupo-1-1-wiki/assets/team_j.jpg}" alt="Miembro - Juan Muñoz">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="subtitle">Proyectos Actuales</h2>
+        <div class="card-container">
+            <div class="card">
+                <div class="text-content">
+                    <h3>LandMates - Creando vacaciones inolvidables</h3>
+                    <p class="description">
+                        Nuestro objetivo es conectar a aquellos que poseen una propiedad y desean arrendarlas con aquellos que buscan un lugar seguro donde descansar en sus vacaciones
+                    </p>
+                    <a href="https://two.mates.sbs" target="_blank" class="info-btn">
+                        Visítanos
+                    </a>
+                </div>
+                <img th:src="@{/grupo-1-1-wiki/assets/landmates.png}" alt="LandMates Logo">
+            </div>
+        </div>
+    </section>
+
+</section>
 </body>
 
 </html>
