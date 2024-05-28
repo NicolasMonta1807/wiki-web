@@ -1,7 +1,7 @@
 package mates.web.wiki.controllers;
 
 import mates.web.wiki.services.MailService;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -52,10 +52,16 @@ public class RouteController {
 
         sendConfirmationEmails(contact);
         contactRepository.save(contact);
-        return new ModelAndView("home");
+        return new ModelAndView("redirect:/grupo-1-1-wiki/thanks");
     }
 
-    private void sendConfirmationEmails(Contact contact) {
+    @GetMapping("/thanks")
+    public ModelAndView getFormThanks() {
+        return new ModelAndView("thanks");
+    }
+
+    @Async
+    public void sendConfirmationEmails(Contact contact) {
         mailService.sendEmail(
                 contact.getEmail(),
                 "Thank you for contacting us - TwoMates",
