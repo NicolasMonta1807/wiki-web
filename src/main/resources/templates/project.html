@@ -1,225 +1,228 @@
 <html layout:decorate="~{layout}">
 
 <head>
-  <title>Proyecto</title>
-  <link rel="stylesheet" th:href="@{~/grupo-1-1-wiki/styles/project.css}">
+    <title>Proyecto</title>
+    <link rel="stylesheet" th:href="@{~/grupo-1-1-wiki/styles/project.css}">
 </head>
 
 <body>
-  <section layout:fragment="content">
+<section layout:fragment="content">
 
-    <h1>Proyecto Arrienda Tu Finca</h1>
+    <h1>Proyecto LandMates</h1>
 
     <div class="container">
-      <section class="segment" id="req">
-        <h2>Requerimientos Funcionales</h2>
-        <table class="uh-table">
-          <colgroup>
-            <col span="1" id="col1">
-            <col span="1" id="col2">
-            <col span="1" id="col3">
-          </colgroup>
-          <tr>
-            <th class="table-title" colspan="3">Usuario arrendador</th>
-          </tr>
-          <tr>
-            <th>ID</th>
-            <th>Caso</th>
-            <th>Descripción</th>
-          </tr>
+        <section class="segment" id="req">
+            <h2>Requerimientos Funcionales</h2>
+            <table class="uh-table">
+                <colgroup>
+                    <col span="1" id="col1">
+                    <col span="1" id="col2">
+                    <col span="1" id="col3">
+                </colgroup>
+                <tr>
+                    <th class="table-title" colspan="3">Usuario arrendador</th>
+                </tr>
+                <tr>
+                    <th>ID</th>
+                    <th>Caso</th>
+                    <th>Descripción</th>
+                </tr>
 
-          <tr>
-            <td>HUA 1</td>
-            <td>Creación de cuenta</td>
-            <td>Crear una cuenta de usuario para manejar mis propiedades</td>
-          </tr>
+                <tr>
+                    <td>HUA 1</td>
+                    <td>Creación de cuenta</td>
+                    <td>Crear una cuenta de usuario para manejar mis propiedades</td>
+                </tr>
 
-          <tr>
-            <td>HUA 2</td>
-            <td>Activación de cuenta</td>
-            <td>Verificar la autenticidad de mi cuenta para acceder a las herramientas necesarias</td>
-          </tr>
-          <tr>
-            <td>HUA 3</td>
-            <td>Autenticación de Usuario</td>
-            <td>Autenticar el perfil de usuario al ingresar al sistema</td>
-          </tr>
-          <tr>
-            <td>HUA 4</td>
-            <td>Ver mis propiedades</td>
-            <td>Ver las propiedades que engo a cargo del arrendador</td>
-          </tr>
-          <tr>
-            <td>HUA 5</td>
-            <td>Crear propiedad</td>
-            <td>Añadir una nueva propiedad a cargo del arrendador</td>
-          </tr>
-          <tr>
-            <td>HUA 6</td>
-            <td>Editar propiedad</td>
-            <td>Modificar la información correspondiente a una propiedad a cargo del arrendador </td>
-          </tr>
-          <tr>
-            <td>HUA 7</td>
-            <td>Subir fotos de la propiedad</td>
-            <td>Añadir fotografías de cada propiedad para mostrar de mejor forma sus atributos</td>
-          </tr>
-          <tr>
-            <td>HUA 8</td>
-            <td>Desactivar propiedad</td>
-            <td>Congelar temporalmente el arrendamiento de una propiedad</td>
-          </tr>
-          <tr>
-            <td>HUA 9</td>
-            <td>Ver solicitudes de arriendo</td>
-            <td>Revisar las solicitudes para aceptarlas o rechazarlas</td>
-          </tr>
-          <tr>
-            <td>HUA 10</td>
-            <td>Aceptar solicitud de arriendo</td>
-            <td>Confirmar la solicitud del arriendo de una propiedad </td>
-          </tr>
-          <tr>
-            <td>HUA 11</td>
-            <td>Cancelar solicitud de arriendo</td>
-            <td>Denegar la solicitud del arriendo de una propiedad</td>
-          </tr>
-          <tr>
-            <td>HUA 12</td>
-            <td>Calificar arrendatario</td>
-            <td>Una vez terminada la estadía, calificar el comportamiento del usuario arrendatario de la propiedad</td>
-          </tr>
-        </table>
+                <tr>
+                    <td>HUA 2</td>
+                    <td>Activación de cuenta</td>
+                    <td>Verificar la autenticidad de mi cuenta para acceder a las herramientas necesarias</td>
+                </tr>
+                <tr>
+                    <td>HUA 3</td>
+                    <td>Autenticación de Usuario</td>
+                    <td>Autenticar el perfil de usuario al ingresar al sistema</td>
+                </tr>
+                <tr>
+                    <td>HUA 4</td>
+                    <td>Ver mis propiedades</td>
+                    <td>Ver las propiedades que engo a cargo del arrendador</td>
+                </tr>
+                <tr>
+                    <td>HUA 5</td>
+                    <td>Crear propiedad</td>
+                    <td>Añadir una nueva propiedad a cargo del arrendador</td>
+                </tr>
+                <tr>
+                    <td>HUA 6</td>
+                    <td>Editar propiedad</td>
+                    <td>Modificar la información correspondiente a una propiedad a cargo del arrendador</td>
+                </tr>
+                <tr>
+                    <td>HUA 7</td>
+                    <td>Subir fotos de la propiedad</td>
+                    <td>Añadir fotografías de cada propiedad para mostrar de mejor forma sus atributos</td>
+                </tr>
+                <tr>
+                    <td>HUA 8</td>
+                    <td>Desactivar propiedad</td>
+                    <td>Congelar temporalmente el arrendamiento de una propiedad</td>
+                </tr>
+                <tr>
+                    <td>HUA 9</td>
+                    <td>Ver solicitudes de arriendo</td>
+                    <td>Revisar las solicitudes para aceptarlas o rechazarlas</td>
+                </tr>
+                <tr>
+                    <td>HUA 10</td>
+                    <td>Aceptar solicitud de arriendo</td>
+                    <td>Confirmar la solicitud del arriendo de una propiedad</td>
+                </tr>
+                <tr>
+                    <td>HUA 11</td>
+                    <td>Cancelar solicitud de arriendo</td>
+                    <td>Denegar la solicitud del arriendo de una propiedad</td>
+                </tr>
+                <tr>
+                    <td>HUA 12</td>
+                    <td>Calificar arrendatario</td>
+                    <td>Una vez terminada la estadía, calificar el comportamiento del usuario arrendatario de la
+                        propiedad
+                    </td>
+                </tr>
+            </table>
 
-        <table class="uh-table">
-          <colgroup>
-            <col span="1" id="col1">
-            <col span="1" id="col2">
-            <col span="1" id="col3">
-          </colgroup>
-          <tr>
-            <th class="table-title" colspan="3">Usuario arrendatario</th>
-          </tr>
-          <tr>
-            <th>ID</th>
-            <th>Caso</th>
-            <th>Descripción</th>
-          </tr>
-          <tr>
-            <td>HUA 13</td>
-            <td>Creación de cuenta</td>
-            <td>Crear una cuenta para poder manejar solicitudes de arrendamiento</td>
-          </tr>
-          <tr>
-            <td>HUA 14</td>
-            <td>Activación de cuenta</td>
-            <td>Verificar la autenticidad de mi cuenta para poder acceder a las herramientas del sistema</td>
-          </tr>
-          <tr>
-            <td>HUA 15</td>
-            <td>Autenticación de Usuario</td>
-            <td>Autenticar el perfil del usuario para ingresar al sistema</td>
-          </tr>
-          <tr>
-            <td>HUA 16</td>
-            <td>Buscar propiedades</td>
-            <td>Ubicar propiedades dependiendo del municipio deseado para la estadía</td>
-          </tr>
-          <tr>
-            <td>HUA 17</td>
-            <td>Solicitar arriendo</td>
-            <td>Enviar una solicitud para confirmar la posibilidad de arrendamiento en una fecha específica</td>
-          </tr>
-          <tr>
-            <td>HUA 18</td>
-            <td>Ver solicitudes de arriendo</td>
-            <td>Revisar las solicitudes enviadas hasta el momento</td>
-          </tr>
-          <tr>
-            <td>HUA 19</td>
-            <td>Pagar arriendo</td>
-            <td>Una vez confirmada la solicitud, pagar el valor necesario para la solicitud de arrendamiento</td>
-          </tr>
-          <tr>
-            <td>HUA 20</td>
-            <td>Calificar Finca</td>
-            <td>Una vez terminada la estadía, calificar las comodidades de la finca</td>
-          </tr>
-          <tr>
-            <td>HUA 21</td>
-            <td>Calificar arrendador</td>
-            <td>Una vez terminada la estadía, calificar el comportamiento del usuario arrendador de la propiedad</td>
-          </tr>
-        </table>
+            <table class="uh-table">
+                <colgroup>
+                    <col span="1" id="col1">
+                    <col span="1" id="col2">
+                    <col span="1" id="col3">
+                </colgroup>
+                <tr>
+                    <th class="table-title" colspan="3">Usuario arrendatario</th>
+                </tr>
+                <tr>
+                    <th>ID</th>
+                    <th>Caso</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td>HUA 13</td>
+                    <td>Creación de cuenta</td>
+                    <td>Crear una cuenta para poder manejar solicitudes de arrendamiento</td>
+                </tr>
+                <tr>
+                    <td>HUA 14</td>
+                    <td>Activación de cuenta</td>
+                    <td>Verificar la autenticidad de mi cuenta para poder acceder a las herramientas del sistema</td>
+                </tr>
+                <tr>
+                    <td>HUA 15</td>
+                    <td>Autenticación de Usuario</td>
+                    <td>Autenticar el perfil del usuario para ingresar al sistema</td>
+                </tr>
+                <tr>
+                    <td>HUA 16</td>
+                    <td>Buscar propiedades</td>
+                    <td>Ubicar propiedades dependiendo del municipio deseado para la estadía</td>
+                </tr>
+                <tr>
+                    <td>HUA 17</td>
+                    <td>Solicitar arriendo</td>
+                    <td>Enviar una solicitud para confirmar la posibilidad de arrendamiento en una fecha específica</td>
+                </tr>
+                <tr>
+                    <td>HUA 18</td>
+                    <td>Ver solicitudes de arriendo</td>
+                    <td>Revisar las solicitudes enviadas hasta el momento</td>
+                </tr>
+                <tr>
+                    <td>HUA 19</td>
+                    <td>Pagar arriendo</td>
+                    <td>Una vez confirmada la solicitud, pagar el valor necesario para la solicitud de arrendamiento
+                    </td>
+                </tr>
+                <tr>
+                    <td>HUA 20</td>
+                    <td>Calificar Finca</td>
+                    <td>Una vez terminada la estadía, calificar las comodidades de la finca</td>
+                </tr>
+                <tr>
+                    <td>HUA 21</td>
+                    <td>Calificar arrendador</td>
+                    <td>Una vez terminada la estadía, calificar el comportamiento del usuario arrendador de la
+                        propiedad
+                    </td>
+                </tr>
+            </table>
 
-        <h2>Requerimientos No funcionales</h2>
-        <table class="nf-table">
-          <colgroup>
-            <col span="1" id="col1">
-            <col span="1" id="col2">
-            <col span="1" id="col3">
-          </colgroup>
-          <tr>
-            <th>ID</th>
-            <th>Atributo</th>
-            <th>Descripción</th>
-          </tr>
-          <tr>
-            <td>AC 1</td>
-            <td>Disponibilidad</td>
-            <td>El sistema debe estar disponible 6 días a la semana 18 horas al día, con un rango de cumplimiento del
-              90%
-            </td>
-          </tr>
-          <tr>
-            <td>AC 2</td>
-            <td>Seguridad</td>
-            <td>Garantizar la privacidad de los datos personales de los usuarios. Asegurar la transaccionalidad de los
-              pagos realizados a través de la plataforma</td>
-          </tr>
-          <tr>
-            <td>AC 3</td>
-            <td>Rendimiento</td>
-            <td>El sistema debe resolver las solicitudes recibidas en máximo 3 segundos para hasta 100 usuarios
-              concurrentes</td>
-          </tr>
-          <tr>
-            <td>AC 4</td>
-            <td>Usabilidad</td>
-            <td>El sistema debe ser accesible y operable desde navegadores de escritorio Google Chrome y Mozilla Firefox
-            </td>
-          </tr>
-        </table>
-      </section>
+            <h2>Requerimientos No funcionales</h2>
+            <table class="nf-table">
+                <colgroup>
+                    <col span="1" id="col1">
+                    <col span="1" id="col2">
+                    <col span="1" id="col3">
+                </colgroup>
+                <tr>
+                    <th>ID</th>
+                    <th>Atributo</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td>AC 1</td>
+                    <td>Disponibilidad</td>
+                    <td>El sistema debe estar disponible 6 días a la semana 18 horas al día, con un rango de
+                        cumplimiento del
+                        90%
+                    </td>
+                </tr>
+                <tr>
+                    <td>AC 2</td>
+                    <td>Seguridad</td>
+                    <td>Garantizar la privacidad de los datos personales de los usuarios. Asegurar la transaccionalidad
+                        de los
+                        pagos realizados a través de la plataforma
+                    </td>
+                </tr>
+                <tr>
+                    <td>AC 3</td>
+                    <td>Rendimiento</td>
+                    <td>El sistema debe resolver las solicitudes recibidas en máximo 3 segundos para hasta 100 usuarios
+                        concurrentes
+                    </td>
+                </tr>
+                <tr>
+                    <td>AC 4</td>
+                    <td>Usabilidad</td>
+                    <td>El sistema debe ser accesible y operable desde navegadores de escritorio Google Chrome y Mozilla
+                        Firefox
+                    </td>
+                </tr>
+            </table>
+        </section>
     </div>
 
     <div class="container">
-      <section class="segment" id="arch">
-        <h2>Arquitectura</h2>
-        <div class="arch">
-          <div class="card-container">
+        <section class="segment" id="arch">
+            <h2>Arquitectura</h2>
+            <div class="arch">
+                <div class="card-container">
+                    <div class="card">
+                        <img th:src="@{/grupo-1-1-wiki/assets/modelo-conceptual.jpg}" id="conceptual">
+                        <p class="subtitle">Modelo conceptual</p>
+                    </div>
 
-            <div class="card">
-              <img th:src="@{/grupo-1-1-wiki/assets/modelo-conceptual.png}" id="conceptual">
-              <p class="subtitle">Modelo conceptual</p>
+                    <div class="card">
+                        <img th:src="@{/grupo-1-1-wiki/assets/modelo-componentes.jpg}" id="componentes">
+                        <p class="subtitle">Modelo componentes</p>
+                    </div>
+                </div>
             </div>
-
-            <div class="card">
-              <img th:src="@{/grupo-1-1-wiki/assets/modelo-contenedores.png}" id="contenedores">
-              <p class="subtitle">Modelo contenedores</p>
-            </div>
-          </div>
-
-          <div class="card-container">
-            <div class="card">
-              <img th:src="@{/grupo-1-1-wiki/assets/modelo-componentes.png}" id="componentes">
-              <p class="subtitle">Modelo componentes</p>
-            </div>
-          </div>
-      </section>
+        </section>
     </div>
 
-  </section>
+</section>
 </body>
 
 </html>
