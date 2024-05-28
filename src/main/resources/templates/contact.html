@@ -2,7 +2,7 @@
 
 <head>
   <title>Contacto</title>
-  <link rel="stylesheet" th:href="@{~/grupo-1-1/styles/form.css}">
+  <link rel="stylesheet" th:href="@{~/grupo-1-1-wiki/styles/form.css}">
 </head>
 
 <body>
@@ -13,7 +13,7 @@
       <p class="subtitle">Si tienes algun proyecto, sugerencia o queja en mente, déjanos saber llenando este formulario
       </p>
 
-      <form class="contact-form" action="#" method="post" th:action="@{/grupo-1-1/form/contact}" th:object="${contact}">
+      <form class="contact-form" action="#" method="post" th:action="@{/grupo-1-1-wiki/form/contact}" th:object="${contact}">
         <div class="form-group">
           <label for="name">Nombre: </label>
           <input type="text" id="name" th:field="*{name}" placeholder="Nombre..." />

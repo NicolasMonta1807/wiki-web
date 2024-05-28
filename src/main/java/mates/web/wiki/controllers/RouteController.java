@@ -13,13 +13,13 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("")
+@RequestMapping("/grupo-1-1-wiki")
 public class RouteController {
 
   @Autowired
   private ContactRepository contactRepository;
 
-  @GetMapping("")
+  @GetMapping(value = {"/", ""})
   public ModelAndView getHomePage() {
     return new ModelAndView("home");
   }
